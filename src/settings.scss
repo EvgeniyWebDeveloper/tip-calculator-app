@@ -1,0 +1,100 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'DM Sans', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section,input {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+$defaultTransition:0.2s;
+$maxBorderRadius:20px;
+$mediumBorderRadius:10px;
+$minBorderRadius:5px;
+
+/*Very-dark-cyan*/          $color1: hsl(183, 100%, 15%);
+/*- Dark-grayish-cyan*/     $color2: hsl(186, 14%, 43%);
+/*- Grayish-cyan*/          $color3: hsl(184, 14%, 56%);
+/* Light grayish cyan*/     $color4: hsl(185, 41%, 84%);
+/* Very light grayish cyan*/$color5: hsl(189, 41%, 97%);
+ /*White*/                  $color6: hsl(0, 0%, 100%);
+							$color7:#28c1ad;
+							$color8:rgb(255, 87, 87);
+
+
+							.container {
+								display  : block;
+								margin   : 0 auto;
+								max-width: 1170px;
+							}
+							
+							@media(max-width:576px) {
+								.container{
+									width: 100%;
+								}
+								
+							}
+							
+							@media(min-width:576px) and (max-width:768px) {
+								.container {
+									width: 100%;
+								}
+							}
+							
+							@media(min-width:768px) and (max-width:992px) {
+								.container {
+									width: 720px;
+							
+								}
+							
+							}
+							
+							@media(min-width:992px) and (max-width:1100px) {
+								.container {
+									width: 930px;
+							
+								}
+							}
+							
+							@media(min-width:1200px) {
+								.container {
+									width: 1178px;
+								}
+							}
